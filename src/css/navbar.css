@@ -1,0 +1,46 @@
+.navbar {
+  position: fixed; /* Cố định navbar bên trái */
+  top: 0;
+  left: 0;
+  width: 20%; /* Điều chỉnh chiều rộng navbar */
+  height: 79%;
+  background-color: #F0F2F5; /* Điều chỉnh màu nền */
+  padding: 20px;
+  margin-top: 90px;
+  overflow-y: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Điều chỉnh màu chữ */
+}
+.navbar::-webkit-scrollbar {
+  width: 0px; /* Điều chỉnh chiều rộng thanh cuộn */
+}
+
+.navbar:hover::-webkit-scrollbar {
+  width: 10px; /* Hiển thị thanh cuộn khi hover */
+}
+
+.navbar::-webkit-scrollbar-track {
+  background: transparent; /* Làm nền trong suốt */
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background: #d1d1d1; /* Màu của thanh trượt */
+  border-radius: 2px; /* Làm tròn góc thanh trượt */
+}
+
+.navbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; /* Màu khi di chuột qua */
+}

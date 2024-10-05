@@ -1,0 +1,75 @@
+/* CSS cho component Notification */
+
+.notification {
+    position: fixed; 
+    display: inline-grid;
+    top: 50%; 
+    right: 50%; 
+    transform: translate(50%, -50%);
+    padding: 20px 80px;
+    border-radius: 5px;
+    background-color: #f0f0f0; 
+    color: #333;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+    animation: zoomInOut 1s ease-in-out 1;
+  }
+  
+  .notification.show {
+    opacity: 1; /* Hiển thị thông báo */
+  }
+  
+  .notification.success {
+    background-color: #4caf50; /* Màu nền cho thông báo thành công */
+    color: #fff; /* Màu chữ cho thông báo thành công */
+  }
+  
+  .notification.error {
+    background-color: #f44336; /* Màu nền cho thông báo lỗi */
+    color: #fff; /* Màu chữ cho thông báo lỗi */
+  }
+  
+  .notification.warning {
+    background-color: #ff9800; /* Màu nền cho thông báo cảnh báo */
+    color: #fff; /* Màu chữ cho thông báo cảnh báo */
+  }
+  
+  .notification.info {
+    background-color: #2196f3; /* Màu nền cho thông báo thông tin */
+    color: #fff; /* Màu chữ cho thông báo thông tin */
+  }
+
+  .icon {
+    margin: auto;
+    font-size: 45px;
+    margin-bottom: 20px;
+    /* animation: bounce 1s ease-in-out 1; */
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: translate(50%, -50%) scale(1); /* Giữ nguyên vị trí khi scale */
+    }
+    50% {
+      transform: translate(50%, -50%) scale(1.5); /* Giữ nguyên vị trí khi scale */
+    }
+  }
+  @keyframes fadeOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }

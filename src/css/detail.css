@@ -1,0 +1,21 @@
+.post-detail-container {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+.post-title {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Thêm các style khác cho các element trong component nếu cần */
